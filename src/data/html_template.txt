@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Most Frequent Words</title>
+</head>
+<body>
+{body_text}
+</body>
+</html>
