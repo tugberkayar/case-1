@@ -44,21 +44,6 @@ class Logics:
         return most_frequent_words_dict
 
     @staticmethod
-    def split_news_into_categories(all_news: List[News]) -> Dict[Constants.Category, List[News]]:
-        """ Split news into categories, Keeps only the ones that will be processed.
-
-        Args:
-            all_news (List[News]): List of news.
-
-        Returns:
-            Dict[Constant.Category, List[News]]: News divided into categories.
-        """
-        split_news: Dict[Constants.Category, List[News]] = defaultdict(list)
-        for news in all_news:
-            split_news[news.category].append(news)
-        return split_news
-
-    @staticmethod
     def _is_word_excluded(word: str, stop_words: Set[str]) -> bool:
         """ Decides whether a word should be excluded from counter or not.
 
